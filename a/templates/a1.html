@@ -1,0 +1,15 @@
+{% extends 'be-su.html'%}
+
+{%block head%}
+{%endblock%}
+{%block body%}
+<h1>トップページ</h1>
+<a href="/a2"role="button">create new task</a>
+{% for post in posts %}
+<p1>タイトル:{{post.title}}</p1>>
+<k1>期限:{{post.due.date()}}</k1>
+<a href="detail/{{post.id}}"role="button">Detail</a>
+<a href="update/{{post.id}}"role="button">Update</a>
+<a href="delete/{{post.id}}"role="button">Delete</a>
+{%endfor%}
+{%endblock%}

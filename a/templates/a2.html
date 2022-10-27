@@ -1,0 +1,14 @@
+{% extends 'be-su.html'%}
+{%block head%} 
+{%endblock%}
+{%block body%}
+<form  action="/" method="POST">
+    <label for="Title">Title</label>
+    <input type="text" name="Title" class="h1" >
+    <label for="detail">Detail</label>
+    <input type="text" name="detail">
+    <label for="due">Due</label>
+    <input type="date" name="due" required >
+    <input type="submit" value="Create">
+</form>
+{%endblock%}
