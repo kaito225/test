@@ -85,7 +85,7 @@ class Plane(pg.sprite.Sprite):
             self.deadimgs.append(self.deadimg)
 
         #リスポン時の無敵状態の画像をリストに格納
-        self.immortal_i2mgs = []
+        self.immortal_imgs = []
         for i in range(9,10):
             num = str(i)
             if len(num) == 1:
